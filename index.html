@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0e0c">
+<title>VORTEX ACADEMY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><a class="brand" href="#">VORTEX <b>ACADEMY</b></a><button id="menuToggle" aria-label="Abrir menu">☰</button>
+<nav id="mainNav"><a href="#inicio">Início</a><a href="#cursos">Cursos</a><a href="#sobre">Sobre</a><a href="#" data-auth="login">Entrar</a></nav></header>
+<main>
+<section class="hero" id="inicio"><div><small>EDUCAÇÃO ESPORTIVA GRATUITA</small><h1>EVOLUA SEU<br><span>JOGO.</span></h1><p>Conhecimento, técnica e estratégia para quem quer aprender, ensinar e viver o voleibol.</p><a class="button" href="#cursos">EXPLORAR CURSOS ↗</a><p class="tagline">100% GRATUITO • PARA ATLETAS E TREINADORES</p></div><div class="hero-art"><strong>V</strong><span>DISCIPLINA GERA EVOLUÇÃO.</span></div></section>
+<section class="section" id="cursos"><small>SUA JORNADA COMEÇA AQUI</small><h2>CURSOS EM <span>DESTAQUE</span></h2><div class="cards">
+<article><small>INICIANTE</small><h3>Fundamentos do Voleibol</h3><p>Aprenda os fundamentos, as regras e os movimentos essenciais.</p><a href="#" data-auth="signup">CRIAR CONTA GRATUITA ↗</a></article>
+<article><small>INTERMEDIÁRIO</small><h3>Técnica e Aperfeiçoamento</h3><p>Desenvolva passe, manchete, levantamento, saque, ataque e defesa.</p><a href="#" data-auth="signup">CRIAR CONTA GRATUITA ↗</a></article>
+<article><small>AVANÇADO</small><h3>Sistemas Táticos</h3><p>Entenda posicionamento, rotações, sistemas e estratégias coletivas.</p><a href="#" data-auth="signup">CRIAR CONTA GRATUITA ↗</a></article></div></section>
+<section class="about" id="sobre"><small>NOSSA MISSÃO</small><h2>O CONHECIMENTO TRANSFORMA O <span>JOGO.</span></h2><p>A VORTEX ACADEMY compartilha conhecimento sobre voleibol com atletas e treinadores, de forma gratuita e acessível.</p></section>
+<section class="access" id="acesso"><small>APRENDA NO SEU RITMO</small><h2>SEU PRÓXIMO NÍVEL COMEÇA COM <span>CONHECIMENTO.</span></h2><p>Crie sua conta gratuita para acompanhar sua jornada de aprendizagem.</p><button class="button" data-auth="signup">CRIAR CONTA GRATUITA ↗</button><p id="sessionInfo" aria-live="polite">Acesso gratuito • Aprenda no seu ritmo</p><button id="signOut" hidden>Sair da conta</button></section>
+</main>
+<dialog id="authDialog"><button id="closeAuth" class="close">×</button><small>VORTEX ACADEMY</small><h2 id="authTitle">Entrar</h2>
+<form id="authForm"><label id="nameWrap" hidden>Nome completo<input id="fullName" autocomplete="name"></label><label>E-mail<input id="email" type="email" required autocomplete="email"></label><label id="passwordWrap">Senha<input id="password" type="password" minlength="6" required autocomplete="current-password"></label><button class="button" type="submit" id="submitAuth">ENTRAR</button></form>
+<p id="authMessage" aria-live="polite"></p><button id="forgotPassword" class="linkbtn">Esqueci minha senha</button><button id="switchAuth" class="linkbtn">Criar conta gratuita</button></dialog>
+<footer>VORTEX ACADEMY <span>EDUCAÇÃO • TÉCNICA • EVOLUÇÃO</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script><script src="script.js"></script>
+</body></html>
